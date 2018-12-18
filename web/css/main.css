@@ -1,0 +1,12 @@
+#nav-buttons > a{
+    width: 150px;
+}
+#header-title{
+    color: #f4e8c1;
+}
+#header-subtitle{
+    color: #f4e8d1;
+}
+#getStartedbody{
+    background: linear-gradient(-30deg, #351f39, #a0c1b8 45%, #726a95  45%) #709fb0;
+}

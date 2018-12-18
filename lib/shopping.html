@@ -1,0 +1,39 @@
+<section class="hero is-medium is-primary is-bold">
+    <div class="hero-body has-text-centered">
+        <h2 class="title is-1 has-text-centered">Yes!! Order your home</h2>
+      
+      </div>
+</section>
+
+<section class="container section">
+        <div class="columns is-multiline">
+          <div class="column is-4"  *ngFor="let products of data">
+            <div class="card is-shady">
+              <div class="card-image">
+                  <div class="media is-info">
+                    
+                  </div>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h4  id="productName">{{products.name}}</h4>
+                  <p  id="productDescription">{{products.description}}</p>
+                  <p id="price">{{products.price}}</p>
+                  <a class="button is-link modal-button" (click)="onSelect(products)" >Proceed Checkout</a>
+               </div>  
+    </div>
+             
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" *ngIf="selectedProduct != null">
+    <div class="box">
+        <label>Product Name: {{selectedProduct.name}}</label><br />
+        <label>Product Description: {{selectedProduct.description}}</label> <br />
+        <label>Product Price: {{selectedProduct.price}}</label> <br />
+           
+     </div>
+  </section>

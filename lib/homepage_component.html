@@ -1,0 +1,12 @@
+
+
+        <section class="hero is-medium is-primary is-bold">
+          <div class="hero-body has-text-centered">
+              <h2 class="title is-1 has-text-centered">Order your home</h2>
+              <a class="button is-warning"
+              [routerLink]="RoutePaths.shopping.toUrl()" 
+              [routerLinkActive]="'active-now'">Start Shopping</a>
+            </div>
+      </section>
+
+<router-outlet [routes]="Routes.all"></router-outlet>

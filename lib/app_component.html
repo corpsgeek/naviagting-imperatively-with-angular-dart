@@ -1,0 +1,21 @@
+<nav class="navbar is-fixed-top" role="navigator" aria-label="main navigation">
+       
+
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item is-info">
+              <a class="navbar-item hvr-underline-from-left"
+              [routerLink]="RoutePaths.home.toUrl()" [routerLinkActive]="'active-now'">
+                Home
+              </a>
+              <a class="navbar-item hvr-underline-from-left"
+              [routerLink]="RoutePaths.shopping.toUrl()" [routerLinkActive]="'active-now'">
+                    Shopping
+                  </a>
+        </div>
+          </div>
+
+        </div>
+
+      </nav>
+      <router-outlet [routes]="Routes.all"></router-outlet>
